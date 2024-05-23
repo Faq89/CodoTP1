@@ -1,3 +1,16 @@
+document.getElementById('image').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const img = document.getElementById('thumbnail');
+            img.src = e.target.result;
+            img.style.display = 'block';
+        }
+        reader.readAsDataURL(file);
+    }
+});
+
 document.getElementById('consultaForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -17,7 +30,6 @@ document.getElementById('consultaForm').addEventListener('submit', function (eve
 
     if (confirm('¿Desea completar el envío?')) {
         alert('Formulario enviado con éxito.');
-
     } else {
         alert('Envío cancelado.');
     }
