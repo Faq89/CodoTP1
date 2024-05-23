@@ -9,8 +9,8 @@ document.getElementById('consultaForm').addEventListener('submit', function (eve
     const mensaje = document.getElementById('mensaje').value;
     const suscripcion = document.querySelector('input[name="suscripcion"]:checked');
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
+    const emailVerificacion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailVerificacion.test(email)) {
         alert('Por favor, ingrese un email válido.');
         return;
     }
