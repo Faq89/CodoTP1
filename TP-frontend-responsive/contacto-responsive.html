@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Consulta</title>
+    <link rel="icon" type="image/x-icon" href="./img/icono-favicon.ico">
+    <title>La tienda del libro | Contacto</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style-contacto-responsive.css">
-    <link rel="stylesheet" href="css/style-nosotros-responsive.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redressed&display=swap" rel="stylesheet">
-</head>
 </head>
 <body>
     <header>
@@ -28,6 +29,14 @@
             </ul> 
         </nav>
     </header>
+    <div class="logo-titulo-contacto">
+        <img src="img/Logo.png" alt="Imagen del logo" class="imagen-logo" height="120" width="120">
+        <h2 class="titulo-contacto">Contacto</h2>
+    </div>
+    <div>
+        <p class="texto-contacto">Si querés realizar una consulta contactate con nosotros completando el siguiente formulario. 
+            A la brevedad nos estaremos comunicando.</p>
+    </div>
     <form id="consultaForm">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -50,13 +59,15 @@
             <input type="file" id="image" name="image" accept="image/*" required>
         </div>
         <div class="form-group">
-            <img id="thumbnail" class="thumbnail" alt="Vista previa de la imagen">
+            <img id="thumbnail" class="thumbnail" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Vista previa de la imagen">
         </div>
         <div class="form-group">
             <label for="tipoConsulta">Tipo de Solicitud:</label>
             <select id="tipoConsulta" name="tipoConsulta" required>
-                <option value="consulta">Consulta</option>
+                <option value="" disabled selected hidden>Seleccione una opción</option>
                 <option value="queja">Queja</option>
+                <option value="consulta">Consulta</option>
+                <option value="otros">Otros</option>
             </select>
         </div>
         <div class="form-group">
@@ -83,7 +94,7 @@
         <div class="contenido-footer">
             <img src="./img/Logo-nombre.png" alt="Logo de La tienda del libro" class="logo-footer" height="150" width="150">
             <div class="p-footer">
-                <p class="texto-footer">Proyecto  realizado por: Facundo Ledesma - Nicolás Bianchi Morán - Heliana Rivas - Alexis</p><br>
+                <p class="texto-footer">Proyecto  realizado por: Facundo Ledesma - Nicolás Bianchi Morán - Heliana Rivas - Alexis Plescia</p><br>
                 <p class="texto-footer">Imágenes extraídas de Unsplash y Freepik</p><br>
                 <p class="texto-footer">Link del repositorio en Github: <a href="https://github.com/Faq89/CodoTP1.git" target="_blank">aquí</a>.</p>
             </div>
