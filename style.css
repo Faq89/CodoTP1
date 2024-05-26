@@ -22,7 +22,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
 }    
 
@@ -70,7 +70,7 @@ header{
 .lista-navegacion li:hover{
     transform: scale(1.1); 
     background-color: #936569;
-    padding: 10px 15px;
+    padding: 2px 5px;
     border-radius: 20px;
 
 }
