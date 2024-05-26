@@ -78,17 +78,13 @@ button[type="reset"]:hover {
   background-color: #bb9d82;
 }
 
-.logo-titulo-contacto {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-top: 2em;
-  margin-bottom: 1em;
+.logo-titulo-contacto{
+  display:flex;
 }
-.titulo-contacto {
-  display: inline;
+
+.titulo-contacto{
   font-size: 1.7em;
-  margin: 0;
+  margin-top: 2em;
 }
 
 /* Para alinear el texto de contacto */
