@@ -23,8 +23,20 @@ document.getElementById('consultaForm').addEventListener('submit', function (eve
     const suscripcion = document.querySelector('input[name="suscripcion"]:checked');
 
     const emailVerificacion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const letrasVerificacion = /^[a-zA-Z\s]+$/;
+
     if (!emailVerificacion.test(email)) {
         alert('Por favor, ingrese un email válido.');
+        return;
+    }
+
+    if (!letrasVerificacion.test(nombre)) {
+        alert('Por favor, ingrese un nombre válido.');
+        return;
+    }
+
+    if (!letrasVerificacion.test(apellido)) {
+        alert('Por favor, ingrese un apellido válido.');
         return;
     }
 
